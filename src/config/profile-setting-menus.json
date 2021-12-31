@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Hesap Ayarları",
+        "subtitle": "Hesap bilgilerinizi görüntüleyin.",
+        "icon": "settings-outline",
+        "link": "Settings"
+    },
+    {
+        "title": "Dil Ayarları",
+        "subtitle": "Uygulamanın dilini değiştirin.",
+        "icon": "globe-outline",
+        "link": "Orders"
+    },
+    {
+        "title": "Çıkış Yap",
+        "subtitle": "Oturumunuzu kapatın",
+        "icon": "lock-outline",
+        "link": "Logout",
+        "isColored": true,
+        "hideDivider": true
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Siparişlerim",
+        "subtitle": "Sipariş durumunuzu görüntüleyin.",
+        "icon": "cube-outline",
+        "link": "Orders"
+    },
+    {
+        "title": "Favorilerim",
+        "subtitle": "Beğendiklerinizi görüntüleyin.",
+        "icon": "star-outline",
+        "link": "Favorites"
+    },
+    {
+        "title": "Adreslerim",
+        "subtitle": "Adreslerinizi ekleyin ve düzenleyin.",
+        "icon": "inbox-outline",
+        "link": "Addresses"
+    },
+    {
+        "title": "Yardım & Destek",
+        "subtitle": "Sorunuz mu var? Bize ulaşın.",
+        "icon": "question-mark-circle-outline",
+        "link": "Help"
+    }
+]

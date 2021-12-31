@@ -1,0 +1,6 @@
+module Pods_MertAlbum_MertAlbumTests {
+  umbrella header "Pods-MertAlbum-MertAlbumTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
