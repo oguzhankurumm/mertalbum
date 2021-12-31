@@ -2,7 +2,10 @@ import {
     USER_STATE_CHANGE,
     USER_LOGOUT_START,
     USER_LOGOUT_SUCCESS,
-    USER_LOGOUT_FAILED
+    USER_LOGOUT_FAILED,
+    LOGIN_START,
+    LOGIN_SUCCESS,
+    LOGIN_FAILED
 } from "../constants";
 
 const initialState = {
@@ -31,6 +34,23 @@ const authReducer = (state = initialState, action) => {
                 currentUser: null,
                 loaded: true
             };
+        case LOGIN_START:
+            return {
+                ...state,
+                loaded: false
+            }
+        case LOGIN_SUCCESS:
+            return {
+                ...state,
+                loaded: true,
+                currentUser: action.currentUser
+            }
+        case LOGIN_FAILED:
+            return {
+                ...state,
+                loaded: true,
+                errorMsg: action.error
+            }
         default:
             return state;
     }

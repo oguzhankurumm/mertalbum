@@ -7,10 +7,9 @@ const styles = StyleSheet.create({
         backgroundColor: primary,
         padding: 20,
         marginBottom: 10,
-        width: '90%',
+        width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
-        marginHorizontal: 20,
         borderRadius: 18,
     },
     title: {

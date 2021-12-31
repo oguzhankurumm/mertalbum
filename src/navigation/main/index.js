@@ -12,7 +12,7 @@ import HomeScreen from '../home'
 import Profile from '../../screens/Profile';
 import Search from '../../screens/Search';
 import CategoryDetails from '../../screens/CategorieDetails';
-import ProductDetails from '../../screens/ProductDetails';
+import OrderDetails from '../../screens/OrderDetails';
 import Checkout from '../../screens/Checkout';
 import ProductList from '../../screens/ProductList';
 import { userAuthStateListener } from '../../redux/actions/auth';
@@ -66,8 +66,8 @@ export default function Route() {
                             })}
                         />
                         <Stack.Screen
-                            name="ProductDetails"
-                            component={ProductDetails}
+                            name="OrderDetails"
+                            component={OrderDetails}
                             options={({ route, navigation }) => ({
                                 headerTitle: route.params.title,
                                 headerBackTitleVisible: false,
