@@ -7,31 +7,26 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingHorizontal: 5
     },
     name: {
-        marginTop: 10,
+        marginTop: 20,
         fontFamily: boldText,
         fontSize: 18,
         color: black
     },
-    linkContainer: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 10
-    },
     link: {
         fontFamily: mediumText,
         fontSize: 14,
-        color: lightGray,
-        marginRight: 5
+        color: lightGray
     },
     image: {
         width: 100,
         height: 100,
         resizeMode: 'cover',
         borderRadius: 50,
+        borderWidth: 2,
         backgroundColor: background
     }
 })

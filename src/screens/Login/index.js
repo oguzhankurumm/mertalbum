@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
-import { View, Text, SafeAreaView } from 'react-native';
+import { View, Text, SafeAreaView, Pressable } from 'react-native';
 import styles from './style';
 import { Item } from 'native-base';
+import { Switch } from 'react-native-paper';
 import { TextInput } from 'react-native-paper';
 import BottomButton from '../../components/common/bottom-button';
 import { primary } from '../../assets/styles/colors';
 import { login } from '../../redux/actions/auth';
+import { useDispatch } from 'react-redux';
 
 const Login = ({ navigation }) => {
+    const dispatch = useDispatch();
     const [Loading, setLoading] = useState(false);
     const [Email, setEmail] = useState('');
     const [Password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(true);
+    const [RememberMe, setRememberMe] = useState(true);
 
     const [EmailTextInputRef, setEmailTextInputRef] = useState(null);
     const [PasswordTextInputRef, setPasswordTextInputRef] = useState(null);
 
-    const LoginHandler = async () => {
-        login(Email, Password);
+    const LoginHandler = () => {
+        dispatch(login(Email, Password, RememberMe));
     }
 
     return (
@@ -75,6 +79,16 @@ const Login = ({ navigation }) => {
                             right={<TextInput.Icon onPress={() => setShowPassword(!showPassword)} name={showPassword ? "eye-outline" : "eye-off-outline"} />}
                         />
                     </Item>
+
+                    <View style={styles.buttons}>
+                        <Pressable onPress={() => navigation.navigate('ForgotPassword')}>
+                            <Text style={styles.forgot}>Parolamı Unuttum</Text>
+                        </Pressable>
+                        <View style={styles.switchContainer}>
+                            <Text style={styles.remember}>Beni Hatırla</Text>
+                            <Switch color={primary} style={styles.switch} value={RememberMe} onValueChange={() => setRememberMe(!RememberMe)} />
+                        </View>
+                    </View>
                 </View>
                 <View style={styles.bottomContainer}>
                     <BottomButton title="Giriş Yap" Loading={Loading} disabled={Loading} onPress={LoginHandler} />

@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { black, borderColor, lightGray, white } from '../../assets/styles/colors';
+import { black, darkGray, lightGray, ultraDark, white } from '../../assets/styles/colors';
 import { boldText, mediumText } from '../../assets/styles/fonts';
 
 
@@ -51,6 +51,35 @@ const styles = StyleSheet.create({
     inputItem: {
         marginTop: 20,
         borderColor: '#E1E1E1',
+    },
+    buttons: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop: 20
+    },
+    forgot: {
+        textAlign: 'left',
+        fontSize: 16,
+        fontFamily: mediumText,
+        color: ultraDark,
+        marginBottom: 5
+    },
+    remember: {
+        textAlign: 'right',
+        fontSize: 16,
+        fontFamily: mediumText,
+        color: ultraDark,
+        marginBottom: 5
+    },
+    switchContainer: {
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        alignItems: 'center'
+    },
+    switch: {
+        marginLeft: 10
     }
 })
 

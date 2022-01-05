@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
-import { View, Text, SafeAreaView, FlatList } from 'react-native';
+import { SafeAreaView, FlatList } from 'react-native';
+import { useSelector } from 'react-redux';
 import OrderItem from '../../components/order-item';
-import orderData from '../../dummy/order.json';
+import OrdersHeader from '../../components/orders-header';
 import styles from './style';
 
 const Orders = ({ navigation }) => {
-    const navigateToDetails = () => navigation.navigate('OrderDetails');
+    const orderData = useSelector(state => state.ordersReducer.orders);
+    const [selectedHeader, setSelectedHeader] = useState(0);
+    const HeaderData = [
+        { id: 0, title: 'Tümü' },
+        { id: 1, title: 'Tamamlanan' },
+        { id: 2, title: 'İade' },
+        { id: 3, title: 'İptal' }
+    ];
 
-    console.log('ord:', orderData)
+    const onFilterChange = (id) => {
+        setSelectedHeader(id);
+    }
+
+    const navigateToDetails = item => navigation.navigate('OrderDetails', { item });
+
     return (
         <SafeAreaView style={styles.container}>
             <FlatList
@@ -16,14 +29,20 @@ const Orders = ({ navigation }) => {
                 showsVerticalScrollIndicator={false}
                 style={styles.flatlist}
                 keyExtractor={(item, index) => index.toString()}
+                ListHeaderComponent={() => <OrdersHeader data={HeaderData} setSelectedHeader={onFilterChange} selectedHeader={selectedHeader} />}
+                ListHeaderComponentStyle={{ paddingBottom: 10 }}
                 data={orderData}
                 renderItem={({ item, index }) => {
-                    console.log('item:', item)
                     return (
                         <OrderItem
+                            key={index}
                             title={item.id}
-                            subtitle={item.tamamlanmatarihi}
-                            icon="cube-outline"
+                            date={item.created_at}
+                            status={item.orderstatus === 1 ? 'Tamamlandı' : 'İptal'}
+                            number={item.orderparti}
+                            amount={item.grandtotal}
+                            currenySymbol={item.parasimge}
+                            paymentType={item.payments_type}
                             onPress={navigateToDetails}
                         />
                     )

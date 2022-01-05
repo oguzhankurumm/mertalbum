@@ -9,17 +9,35 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         backgroundColor: background,
-        padding: 10,
+        paddingVertical: 20,
+        paddingHorizontal: 10,
         borderRadius: 8
+    },
+    secondContainer: {
+        paddingLeft: 10
     },
     leftContainer: {
         flexDirection: 'row',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center'
     },
-    titleContainer: {
+    middleContainer: {
         justifyContent: 'center',
         alignItems: 'flex-start'
+    },
+    rightContainer: {
+        justifyContent: 'space-between',
+        alignItems: 'flex-end'
+    },
+    right: {
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        alignItems: 'center'
+    },
+    left: {
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'center'
     },
     iconContainer: {
         justifyContent: 'center',
@@ -30,13 +48,18 @@ const styles = StyleSheet.create({
         height: 50,
         marginRight: 15
     },
+    status: {
+        fontFamily: boldText,
+        fontSize: 16,
+        color: primary
+    },
     title: {
         fontFamily: boldText,
         fontSize: 16,
         color: black
     },
     subtitle: {
-        marginTop: 3,
+        marginTop: 8,
         fontFamily: mediumText,
         fontSize: 14,
         color: lightGray

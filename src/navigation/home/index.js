@@ -6,7 +6,6 @@ import { Icon } from 'react-native-eva-icons';
 import Home from '../../screens/Home';
 import Profile from '../../screens/Profile';
 import Campaigns from '../../screens/Campaigns';
-import Orders from '../../screens/Orders';
 
 const Tab = createBottomTabNavigator();
 
@@ -57,7 +56,6 @@ export default function HomeScreen() {
         >
             <Tab.Screen name="Home" component={Home} options={{ headerShown: false, tabBarLabel: 'Ana Sayfa' }} />
             <Tab.Screen name="Campaigns" component={Campaigns} options={{ headerShown: false, tabBarLabel: 'Kampanyalar' }} />
-            <Tab.Screen name="Orders" component={Orders} options={{ headerShown: false, tabBarLabel: 'Siparişlerim' }} />
             <Tab.Screen name="Profile" component={Profile} options={{ headerShown: false, tabBarLabel: 'Profilim' }} />
         </Tab.Navigator>
     );

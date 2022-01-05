@@ -1,35 +1,59 @@
 import React from 'react';
-import { View, ScrollView, Alert } from 'react-native';
+import { View, ScrollView, Alert, Platform, Linking } from 'react-native';
+import styles from './style';
 import { Divider } from 'react-native-paper';
 import MenuItem from '../../components/menu-item';
 import ProfilePicture from '../../components/profile-picture';
 import ProfileMenuItems from '../../config/profile-menus.json';
 import ProfileSettingsMenu from '../../config/profile-setting-menus.json';
 import ListTitle from '../../components/list-title';
-import styles from './style';
+import { useDispatch, useSelector } from 'react-redux';
+import { logout } from '../../redux/actions/auth';
+import { showMessage } from 'react-native-flash-message';
 
 const Profile = ({ navigation }) => {
-    const imageUrl = 'https://evrice.com/static/account/0x1be05056da84ec7a8020e54119c0a8c872197ec8/216e2a6b-73d2-4061-8419-3ce9029888c7.jpg';
+    const dispatch = useDispatch();
+    const navigateToPage = link => navigation.navigate(link);
+    const profileData = useSelector(state => state.authReducer.currentUser);
 
-    const changeAvatar = () => Alert.alert('Change avatar', 'değiştir');
-    const editProfile = () => Alert.alert('Edit profile', 'değiştir');
-    const navigateToPage = () => Alert.alert('navigate', 'me');
+    const dialCall = () => {
+        const phoneNumber = Platform.OS === 'android' ? `tel:+902126181113` : `telprompt:+902126181113`;
+
+        Linking.canOpenURL(phoneNumber)
+            .then(supported => {
+                if (!supported) {
+                    showMessage({ message: 'Hata', description: 'Telefon numarası doğru görünnmüyor, lütfen elle girin.', type: 'danger', icon: 'danger', duration: 3000 });
+                } else {
+                    return Linking.openURL(phoneNumber);
+                };
+            })
+            .catch(error => {
+                showMessage({ message: 'Hata', description: 'Telefon numarası doğru görünnmüyor, lütfen elle girin.', type: 'danger', icon: 'danger', duration: 3000 })
+                console.log('error:', error);
+            });
+    }
 
     return (
         <ScrollView
             style={styles.container}
-            contentContainerStyle={{ paddingVertical: 30 }}
+            contentContainerStyle={{ paddingTop: 20, paddingBottom: 50 }}
             showsHorizontalScrollIndicator={false}
             showsVerticalScrollIndicator={false}
         >
-            <ProfilePicture name="Oğuzhan Kurum" image={imageUrl} onImagePress={changeAvatar} onEditPress={editProfile} />
+            <ProfilePicture name={profileData.name !== undefined && profileData.name !== "" ? `${profileData.name} ${profileData.surname}` : `${profileData.CompanyTitle}`} username={profileData.username} />
 
             {/* ACCOUNT MENU */}
             <View style={styles.itemContainer}>
                 <ListTitle title="HESAP" />
                 {ProfileMenuItems.map((item, index) => (
                     <View key={index}>
-                        <MenuItem title={item.title} subtitle={item.subtitle} icon={item.icon} onPress={() => navigateToPage(item.link)} />
+                        <MenuItem title={item.title} subtitle={item.subtitle} icon={item.icon} onPress={() => {
+                            if (item.isCall) {
+                                dialCall();
+                            } else {
+                                navigateToPage(item.link);
+                            }
+                        }} />
                         <Divider style={styles.divider} />
                     </View>
                 ))}
@@ -40,7 +64,16 @@ const Profile = ({ navigation }) => {
                 <ListTitle title="AYARLAR" />
                 {ProfileSettingsMenu.map((item, index) => (
                     <View key={index}>
-                        <MenuItem title={item.title} subtitle={item.subtitle} icon={item.icon} onPress={() => navigateToPage(item.link)} isColored={item.isColored} />
+                        <MenuItem title={item.title} subtitle={item.subtitle} icon={item.icon} onPress={() => {
+                            if (item.isLogout) {
+                                Alert.alert('Çıkış Yap', 'Hesabınızdan çıkış yapılacak. Emin misiniz?', [
+                                    { text: 'Evet', style: 'destructive', onPress: () => dispatch(logout()) },
+                                    { text: 'Hayır', style: 'cancel' }
+                                ])
+                            } else {
+                                navigateToPage(item.link);
+                            }
+                        }} isColored={item.isColored} />
                         {!item.hideDivider && <Divider style={styles.divider} />}
                     </View>
                 ))}

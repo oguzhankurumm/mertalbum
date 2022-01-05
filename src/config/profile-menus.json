@@ -1,26 +1,21 @@
 [
     {
         "title": "Siparişlerim",
-        "subtitle": "Sipariş durumunuzu görüntüleyin.",
+        "subtitle": "Siparişlerinizi görüntüleyin.",
         "icon": "cube-outline",
         "link": "Orders"
     },
     {
-        "title": "Favorilerim",
-        "subtitle": "Beğendiklerinizi görüntüleyin.",
-        "icon": "star-outline",
-        "link": "Favorites"
-    },
-    {
         "title": "Adreslerim",
-        "subtitle": "Adreslerinizi ekleyin ve düzenleyin.",
+        "subtitle": "Adreslerinizi görüntüleyin.",
         "icon": "inbox-outline",
         "link": "Addresses"
     },
     {
         "title": "Yardım & Destek",
-        "subtitle": "Sorunuz mu var? Bize ulaşın.",
+        "subtitle": "Sorunuz mu var? Bizi arayın.",
         "icon": "question-mark-circle-outline",
-        "link": "Help"
+        "link": "Help",
+        "isCall": true
     }
 ]

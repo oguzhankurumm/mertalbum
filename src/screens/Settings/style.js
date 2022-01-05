@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { white } from '../../assets/styles/colors';
+import { boldText } from '../../assets/styles/fonts';
 
 const styles = StyleSheet.create({
     container: {
@@ -7,7 +8,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         backgroundColor: white,
-        padding: 20
+        padding: 5
     }
 })
 

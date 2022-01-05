@@ -7,7 +7,7 @@ const Campaigns = ({ navigation }) => {
     const goCampaignDetail = () => navigation.navigate('CampaignDetail');
 
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Hello from campaigns</Text>
         </View>
     )

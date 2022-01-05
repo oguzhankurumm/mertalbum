@@ -9,7 +9,7 @@
         "title": "Dil Ayarları",
         "subtitle": "Uygulamanın dilini değiştirin.",
         "icon": "globe-outline",
-        "link": "Orders"
+        "link": "Language"
     },
     {
         "title": "Çıkış Yap",
@@ -17,6 +17,7 @@
         "icon": "lock-outline",
         "link": "Logout",
         "isColored": true,
-        "hideDivider": true
+        "hideDivider": true,
+        "isLogout": true
     }
 ]
