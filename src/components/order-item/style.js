@@ -11,7 +11,8 @@ const styles = StyleSheet.create({
         backgroundColor: background,
         paddingVertical: 20,
         paddingHorizontal: 10,
-        borderRadius: 8
+        borderRadius: 8,
+        marginBottom: 10
     },
     secondContainer: {
         paddingLeft: 10

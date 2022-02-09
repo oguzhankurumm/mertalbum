@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
-import { background, black, lightGray, primary, white } from "../../assets/styles/colors";
-import { boldText, mediumText } from "../../assets/styles/fonts";
+import { background, black, primary, white } from "../../assets/styles/colors";
+import { mediumText } from "../../assets/styles/fonts";
 
 const styles = StyleSheet.create({
     container: {
@@ -8,6 +8,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
+    },
+    scrollContainer: {
+        width: '100%'
     },
     title: {
         fontFamily: mediumText,
@@ -20,6 +23,7 @@ const styles = StyleSheet.create({
         color: white
     },
     buttonDefault: {
+        marginRight: 8,
         backgroundColor: background,
         paddingVertical: 10,
         paddingHorizontal: 15,
@@ -28,6 +32,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     buttonSelected: {
+        marginRight: 8,
         backgroundColor: primary,
         paddingVertical: 10,
         paddingHorizontal: 15,

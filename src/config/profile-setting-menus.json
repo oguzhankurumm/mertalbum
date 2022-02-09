@@ -6,15 +6,22 @@
         "link": "Settings"
     },
     {
+        "title": "Parola Değiştir",
+        "subtitle": "Hesabınızın parolasını değiştirin.",
+        "icon": "lock-outline",
+        "link": "ChangePassword"
+    },
+    {
         "title": "Dil Ayarları",
         "subtitle": "Uygulamanın dilini değiştirin.",
         "icon": "globe-outline",
-        "link": "Language"
+        "link": "Language",
+        "selectedLang": true
     },
     {
         "title": "Çıkış Yap",
         "subtitle": "Oturumunuzu kapatın",
-        "icon": "lock-outline",
+        "icon": "power-outline",
         "link": "Logout",
         "isColored": true,
         "hideDivider": true,

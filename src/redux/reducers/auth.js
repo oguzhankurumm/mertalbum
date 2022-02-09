@@ -5,11 +5,15 @@ import {
     USER_LOGOUT_FAILED,
     LOGIN_START,
     LOGIN_SUCCESS,
-    LOGIN_FAILED
+    LOGIN_FAILED,
+    GET_USER_INFO_START,
+    GET_USER_INFO_SUCCESS,
+    GET_USER_INFO_FAILED
 } from "../constants";
 
 const initialState = {
     currentUser: null,
+    userInfo: null,
     loaded: false,
     errorMsg: '',
 }
@@ -50,6 +54,22 @@ const authReducer = (state = initialState, action) => {
                 ...state,
                 loaded: true,
                 errorMsg: action.error
+            }
+        case GET_USER_INFO_START:
+            return {
+                ...state,
+                loaded: false
+            }
+        case GET_USER_INFO_SUCCESS:
+            return {
+                ...state,
+                loaded: true,
+                userInfo: action.userInfo
+            }
+        case GET_USER_INFO_FAILED:
+            return {
+                ...state,
+                loaded: true,
             }
         default:
             return state;

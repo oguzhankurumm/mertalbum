@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
-import { background, white } from '../../assets/styles/colors';
+import { lightGray, white } from '../../assets/styles/colors';
+import { mediumText } from '../../assets/styles/fonts';
 
 const styles = StyleSheet.create({
     container: {
@@ -11,6 +12,19 @@ const styles = StyleSheet.create({
     flatlist: {
         width: '100%',
         padding: 10
+    },
+    emptyContainer: {
+        flex: 1,
+        marginTop: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10
+    },
+    emptyText: {
+        fontSize: 18,
+        color: lightGray,
+        fontFamily: mediumText,
+        textAlign: 'center'
     }
 })
 

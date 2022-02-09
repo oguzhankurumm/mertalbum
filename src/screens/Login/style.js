@@ -17,13 +17,14 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     topContainer: {
-        padding: 20,
+        padding: 10,
         marginTop: 20,
         justifyContent: 'center',
         alignItems: 'center'
     },
     bottomContainer: {
-        paddingHorizontal: 20,
+        marginTop: 10,
+        paddingHorizontal: 10,
         justifyContent: 'center',
         alignItems: 'center'
     },

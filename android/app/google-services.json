@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "526420833088",
+    "project_id": "mertalbumcom",
+    "storage_bucket": "mertalbumcom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526420833088:android:a0206e6af0c2bf223e40a5",
+        "android_client_info": {
+          "package_name": "com.mertalbum.mertalbumapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526420833088-mups1q691siace7oqgtkl50opq6fa64v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClWKt5UrkV6mbw25JKCZnxYfU_69nGGJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526420833088-mups1q691siace7oqgtkl50opq6fa64v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "526420833088-iv70mpocnfes1cc98m560dai4fl2fk0q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mertalbum.mertalbumapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

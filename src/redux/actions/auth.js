@@ -10,6 +10,11 @@ import {
 import ApiUrl from '../../api/ApiUrl';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { getHomeData } from './homedata';
+import { getOrders } from './orders';
+import { getAddresses } from './address';
+import { getUserInfo } from './userinfo';
+import { showMessage } from 'react-native-flash-message';
 
 export const userAuthStateListener = () => async (dispatch) => {
     try {
@@ -24,6 +29,10 @@ export const userAuthStateListener = () => async (dispatch) => {
                     currentUser: logMeIn.data.user,
                     loaded: true
                 });
+                dispatch(getUserInfo(logMeIn.data.user.token));
+                dispatch(getAddresses(logMeIn.data.user.token));
+                dispatch(getHomeData());
+                dispatch(getOrders(logMeIn.data.user.token));
             } else {
                 dispatch({ type: USER_STATE_CHANGE, currentUser: null, loaded: true })
             }
@@ -32,9 +41,9 @@ export const userAuthStateListener = () => async (dispatch) => {
         }
     } catch (e) {
         dispatch({ type: USER_STATE_CHANGE, currentUser: null, loaded: true })
+        showMessage({ message: 'Hata!', description: e.message, type: 'danger', icon: 'danger', duration: 3000 });
     }
 }
-
 
 export function logout() {
     return async dispatch => {
@@ -45,6 +54,7 @@ export function logout() {
             dispatch({ type: USER_LOGOUT_SUCCESS });
         } catch (error) {
             dispatch({ dtype: USER_LOGOUT_FAILED, error: error.message })
+            showMessage({ message: 'Hata!', description: error.message, type: 'danger', icon: 'danger', duration: 3000 });
         }
     }
 }
@@ -59,10 +69,16 @@ export const login = (email, password, rememberme) => async (dispatch) => {
                 await AsyncStorage.setItem('@currentUser', jsonValue)
             }
             dispatch({ type: LOGIN_SUCCESS, currentUser: logMeIn.data.user });
+            dispatch(getUserInfo(logMeIn.data.user.token));
+            dispatch(getAddresses(logMeIn.data.user.token));
+            dispatch(getHomeData());
+            dispatch(getOrders(logMeIn.data.user.token));
         } else {
             dispatch({ type: LOGIN_FAILED, error: logMeIn.data.message });
+            showMessage({ message: 'Hata!', description: logMeIn.data.message, type: 'danger', icon: 'danger', duration: 3000 });
         }
     } catch (err) {
         dispatch({ type: LOGIN_FAILED, error: error.message });
+        showMessage({ message: 'Hata!', description: error.message, type: 'danger', icon: 'danger', duration: 3000 });
     }
 };

@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
-import { white } from "../../../assets/styles/colors";
-import { boldText } from "../../../assets/styles/fonts";
+import { primary, white } from "../../../assets/styles/colors";
+import { boldText, mediumText } from "../../../assets/styles/fonts";
 
 const styles = StyleSheet.create({
     container: {
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         width: 10,
         height: 10,
         borderRadius: 5,
-        backgroundColor: white
+        backgroundColor: primary
     },
     renderItem: {
         flex: 1,
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: -10,
     }
+
 })
 
 export default styles;

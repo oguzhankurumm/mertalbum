@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>526420833088-iv70mpocnfes1cc98m560dai4fl2fk0q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.526420833088-iv70mpocnfes1cc98m560dai4fl2fk0q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC948bKvklbOgXmoODXIXN4s568MxlwL14</string>
+	<key>GCM_SENDER_ID</key>
+	<string>526420833088</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mertalbum.mertalbumapp</string>
+	<key>PROJECT_ID</key>
+	<string>mertalbumcom</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mertalbumcom.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:526420833088:ios:cdd2ea3097f0faf73e40a5</string>
+</dict>
+</plist>

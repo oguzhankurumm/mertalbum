@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
     headerRightTitle: {
         fontFamily: boldText,
         fontSize: 16,
-        color: primary
+        color: primary,
+        marginRight: 5
     },
     rightContainer: {
         flexDirection: 'row',

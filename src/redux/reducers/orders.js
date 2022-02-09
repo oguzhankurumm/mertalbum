@@ -6,6 +6,7 @@ import {
 
 const initialState = {
     orders: [],
+    allOrders: [],
     loading: false,
     errorMsg: ''
 }
@@ -22,6 +23,7 @@ const ordersReducer = (state = initialState, action) => {
             return {
                 ...state,
                 orders: action.orders,
+                allOrders: action.allOrders,
                 loading: false
             };
             break;

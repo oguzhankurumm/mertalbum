@@ -1,20 +1,29 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { View, FlatList } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { messaging } from '../../config/config';
 import Slider from '../../components/common/slider';
 import ProductList from '../../components/common/product-list';
-import { getOrders } from '../../redux/actions/orders';
-import categories from '../../dummy/categories';
-import sliderData from '../../dummy/slider';
 import styles from './style';
 
-const Home = ({ navigation }) => {
-    const dispatch = useDispatch();
-    const profileData = useSelector(state => state.authReducer.currentUser);
+const Home = () => {
+    const products = useSelector(state => state.homeReducer.products);
+    const sliders = useSelector(state => state.homeReducer.sliders);
+
+    const requestUserPermission = async () => {
+        const authStatus = await messaging().requestPermission();
+        const enabled =
+            authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+            authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+
+        if (enabled) {
+            console.log('enabled:', enabled);
+        }
+
+    }
 
     useEffect(() => {
-        dispatch(getOrders(profileData.token));
+        requestUserPermission();
     }, [])
 
     return (
@@ -24,14 +33,14 @@ const Home = ({ navigation }) => {
                 keyExtractor={index => index.toString()}
                 style={styles.container}
                 scrollEnabled={true}
-                ListHeaderComponent={() => <Slider sliders={sliderData} />}
+                ListHeaderComponent={() => <Slider sliders={sliders} />}
                 showsVerticalScrollIndicator={false}
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 10 }}
-                ListHeaderComponentStyle={{ backgroundColor: '#f1f1f1', borderRadius: 12 }}
-                renderItem={() => (
-                    <View>
-                        <ProductList data={categories} title="Kategoriler" />
+                ListHeaderComponentStyle={{ marginTop: 5 }}
+                renderItem={({ index }) => (
+                    <View key={index} >
+                        <ProductList data={products} title="Kategoriler" />
                     </View>
                 )}
             />

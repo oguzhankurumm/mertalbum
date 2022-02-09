@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
 import { white } from '../../assets/styles/colors';
-import { boldText } from '../../assets/styles/fonts';
 
 const styles = StyleSheet.create({
     container: {

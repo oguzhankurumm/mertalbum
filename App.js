@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import store from './src/redux/store';
 import Route from './src/navigation/main';
 import FlashMessage from "react-native-flash-message";
-import Loading from './src/components/Loading';
 
 const App = () => {
   return (

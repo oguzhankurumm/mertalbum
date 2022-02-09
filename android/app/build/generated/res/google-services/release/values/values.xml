@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">526420833088-mups1q691siace7oqgtkl50opq6fa64v.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">526420833088</string>
+    <string name="google_api_key" translatable="false">AIzaSyClWKt5UrkV6mbw25JKCZnxYfU_69nGGJg</string>
+    <string name="google_app_id" translatable="false">1:526420833088:android:a0206e6af0c2bf223e40a5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyClWKt5UrkV6mbw25JKCZnxYfU_69nGGJg</string>
+    <string name="google_storage_bucket" translatable="false">mertalbumcom.appspot.com</string>
+    <string name="project_id" translatable="false">mertalbumcom</string>
+</resources>

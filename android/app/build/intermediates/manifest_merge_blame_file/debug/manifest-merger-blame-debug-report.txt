@@ -1,0 +1,388 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mertalbum.mertalbumapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:3:3-65
+12-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:3:20-62
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:4:3-64
+13-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:4:20-61
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:5:3-78
+14-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:5:20-76
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->[com.facebook.flipper:flipper:0.99.0] /Users/oguzhankurum/.gradle/caches/transforms-3/85722bbced5f75f7128f01e28eb86f9e/transformed/jetified-flipper-0.99.0/AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.99.0] /Users/oguzhankurum/.gradle/caches/transforms-3/85722bbced5f75f7128f01e28eb86f9e/transformed/jetified-flipper-0.99.0/AndroidManifest.xml:16:22-73
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+16-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+17-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+17-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+18-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+18-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+19    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+20    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+21    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+22    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+23    <!-- for Samsung -->
+24    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+24-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+24-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+25    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+25-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+25-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+26    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+27    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+28    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+29    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+30    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+31    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+32    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+33    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+34    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+35    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+36    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+37    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+38    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+39    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/oguzhankurum/.gradle/caches/transforms-3/0f4135323534ebb6d24e1b399a1c2d47/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+40
+41    <application
+41-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:7:3-34:17
+42        android:name="com.mertalbum.mertalbumapp.MainApplication"
+42-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:7:16-47
+43        android:allowBackup="false"
+43-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:7:156-183
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.6.0] /Users/oguzhankurum/.gradle/caches/transforms-3/d3d370670d8dbd7ec202f2a9db7ebc37/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+46-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:7:81-115
+47        android:label="@string/app_name"
+47-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:7:48-80
+48        android:roundIcon="@mipmap/ic_launcher"
+48-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:7:116-155
+49        android:theme="@style/AppTheme"
+49-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:7:184-215
+50        android:usesCleartextTraffic="true" >
+50-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/debug/AndroidManifest.xml:8:9-44
+51        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+51-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/debug/AndroidManifest.xml:11:9-86
+51-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/debug/AndroidManifest.xml:11:19-83
+52        <activity
+52-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:8:5-13:16
+53            android:name="com.mertalbum.mertalbumapp.MainActivity"
+53-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:8:15-43
+54            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+54-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:8:77-154
+55            android:label="@string/app_name"
+55-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:8:44-76
+56            android:launchMode="singleTask"
+56-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:8:155-186
+57            android:windowSoftInputMode="adjustResize" >
+57-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:8:187-229
+58            <intent-filter>
+58-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:9:7-12:23
+59                <action android:name="android.intent.action.MAIN" />
+59-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:10:9-61
+59-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:10:17-58
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:11:9-69
+61-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:11:19-66
+62            </intent-filter>
+63        </activity>
+64
+65        <meta-data
+65-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:14:5-116
+66            android:name="com.dieam.reactnativepushnotification.notification_foreground"
+66-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:14:16-92
+67            android:value="false" /> <!-- Change the resource name to your App's accent color - or any other color you want -->
+67-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:14:93-114
+68        <meta-data
+68-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:16:5-121
+69            android:name="com.dieam.reactnativepushnotification.notification_color"
+69-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:16:16-87
+70            android:resource="@color/white" /> <!-- or @android:color/{name} to use a standard color -->
+70-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:16:88-119
+71        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions" />
+71-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:19:5-104
+71-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:19:15-101
+72        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+72-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:20:5-106
+72-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:20:15-103
+73        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver" >
+73-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:21:5-27:16
+73-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:21:15-111
+74            <intent-filter>
+74-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:22:7-26:23
+75                <action android:name="android.intent.action.BOOT_COMPLETED" />
+75-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:23:9-71
+75-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:23:17-68
+76                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+76-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:24:9-74
+76-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:24:17-71
+77                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+77-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:25:9-73
+77-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:25:17-71
+78            </intent-filter>
+79        </receiver>
+80
+81        <service
+81-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:29:5-33:15
+82            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+82-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:29:14-108
+83            android:exported="false" >
+83-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:29:109-133
+84            <intent-filter>
+84-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:30:7-32:23
+85                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+85-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:31:9-70
+85-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:31:17-67
+86            </intent-filter>
+87        </service>
+88        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" />
+88-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-111
+88-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:18-108
+89        <service
+89-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-21:19
+90            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+90-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-95
+91            android:exported="false" >
+91-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-37
+92            <intent-filter>
+92-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:30:7-32:23
+93                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+93-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:31:9-70
+93-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:31:17-67
+94            </intent-filter>
+95        </service>
+96
+97        <receiver
+97-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-30:20
+98            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+98-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-96
+99            android:exported="true"
+99-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-36
+100            android:permission="com.google.android.c2dm.permission.SEND" >
+100-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-73
+101            <intent-filter>
+101-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-29:29
+102                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+102-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-81
+102-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-78
+103            </intent-filter>
+104        </receiver>
+105
+106        <meta-data
+106-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:32:9-34:36
+107            android:name="firebase_messaging_auto_init_enabled"
+107-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-64
+108            android:value="true" />
+108-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:13-33
+109        <meta-data
+109-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-37:32
+110            android:name="com.google.firebase.messaging.default_notification_channel_id"
+110-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-89
+111            android:value="" />
+111-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-29
+112        <meta-data
+112-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:9-40:47
+113            android:name="com.google.firebase.messaging.default_notification_color"
+113-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-84
+114            android:resource="@color/white" />
+114-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:13-44
+115
+116        <service
+116-->[com.google.firebase:firebase-firestore:22.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/0bcf1d2545378ee030d70c060e80f3b4/transformed/jetified-firebase-firestore-22.1.0/AndroidManifest.xml:17:9-23:19
+117            android:name="com.google.firebase.components.ComponentDiscoveryService"
+117-->[com.google.firebase:firebase-firestore:22.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/0bcf1d2545378ee030d70c060e80f3b4/transformed/jetified-firebase-firestore-22.1.0/AndroidManifest.xml:18:13-84
+118            android:directBootAware="true"
+118-->[com.google.firebase:firebase-common:20.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+119            android:exported="false" >
+119-->[com.google.firebase:firebase-firestore:22.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/0bcf1d2545378ee030d70c060e80f3b4/transformed/jetified-firebase-firestore-22.1.0/AndroidManifest.xml:19:13-37
+120            <meta-data
+120-->[com.google.firebase:firebase-firestore:22.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/0bcf1d2545378ee030d70c060e80f3b4/transformed/jetified-firebase-firestore-22.1.0/AndroidManifest.xml:20:13-22:85
+121                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+121-->[com.google.firebase:firebase-firestore:22.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/0bcf1d2545378ee030d70c060e80f3b4/transformed/jetified-firebase-firestore-22.1.0/AndroidManifest.xml:21:17-111
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-firestore:22.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/0bcf1d2545378ee030d70c060e80f3b4/transformed/jetified-firebase-firestore-22.1.0/AndroidManifest.xml:22:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+124                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+124-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/df6a79a99b260ce77c9364f6880f6b3a/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+127                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+127-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/df6a79a99b260ce77c9364f6880f6b3a/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/df6a79a99b260ce77c9364f6880f6b3a/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-installations:17.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/8988d75e8fd616751377ffdb863f8c8b/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+130                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+130-->[com.google.firebase:firebase-installations:17.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/8988d75e8fd616751377ffdb863f8c8b/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-installations:17.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/8988d75e8fd616751377ffdb863f8c8b/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+132        </service>
+133
+134        <receiver
+134-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+135            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+135-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+136            android:exported="true"
+136-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+137            android:permission="com.google.android.c2dm.permission.SEND" >
+137-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+138            <intent-filter>
+138-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-29:29
+139                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+139-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-81
+139-->[:react-native-firebase_messaging] /Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-78
+140            </intent-filter>
+141        </receiver>
+142        <!--
+143             FirebaseMessagingService performs security checks at runtime,
+144             but set to not exported to explicitly avoid allowing another app to call it.
+145        -->
+146        <service
+146-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+147            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+147-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+148            android:directBootAware="true"
+148-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+149            android:exported="false" >
+149-->[com.google.firebase:firebase-messaging:23.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9cd7d9b6c30adfe8fcbfc09b66753e90/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+150            <intent-filter android:priority="-500" >
+150-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:30:7-32:23
+151                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+151-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:31:9-70
+151-->/Users/oguzhankurum/Desktop/Projeler/MERT-ALBUM/Code/mertalbummobile/android/app/src/main/AndroidManifest.xml:31:17-67
+152            </intent-filter>
+153        </service>
+154        <service
+154-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/d813a6c306d14a6fce92ad421fda2666/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+155            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+155-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/d813a6c306d14a6fce92ad421fda2666/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+156            android:exported="false" >
+156-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/d813a6c306d14a6fce92ad421fda2666/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+157            <meta-data
+157-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/d813a6c306d14a6fce92ad421fda2666/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+158                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+158-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/d813a6c306d14a6fce92ad421fda2666/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+159                android:value="cct" />
+159-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/d813a6c306d14a6fce92ad421fda2666/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+160        </service>
+161        <service
+161-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9a5de049a02ad5cd9f43a16387d157b5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+162            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+162-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9a5de049a02ad5cd9f43a16387d157b5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+163            android:exported="false"
+163-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9a5de049a02ad5cd9f43a16387d157b5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" >
+164-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9a5de049a02ad5cd9f43a16387d157b5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+165        </service>
+166
+167        <receiver
+167-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9a5de049a02ad5cd9f43a16387d157b5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+168            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+168-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9a5de049a02ad5cd9f43a16387d157b5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+169            android:exported="false" />
+169-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/9a5de049a02ad5cd9f43a16387d157b5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+170
+171        <activity
+171-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:23:9-27:75
+172            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+172-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:24:13-93
+173            android:excludeFromRecents="true"
+173-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:25:13-46
+174            android:exported="false"
+174-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:26:13-37
+175            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+175-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:27:13-72
+176        <!--
+177            Service handling Google Sign-In user revocation. For apps that do not integrate with
+178            Google Sign-In, this service will never be started.
+179        -->
+180        <service
+180-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:33:9-37:51
+181            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+181-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:34:13-89
+182            android:exported="true"
+182-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:35:13-36
+183            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+183-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:36:13-107
+184            android:visibleToInstantApps="true" />
+184-->[com.google.android.gms:play-services-auth:19.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bd87ab995dd2d6ffc64d5bd4041459be/transformed/jetified-play-services-auth-19.0.0/AndroidManifest.xml:37:13-48
+185
+186        <activity
+186-->[com.google.android.gms:play-services-base:17.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/512b95d144c616b8d847ef4edcabc95e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+187            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+187-->[com.google.android.gms:play-services-base:17.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/512b95d144c616b8d847ef4edcabc95e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+188            android:exported="false"
+188-->[com.google.android.gms:play-services-base:17.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/512b95d144c616b8d847ef4edcabc95e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+189            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+189-->[com.google.android.gms:play-services-base:17.1.0] /Users/oguzhankurum/.gradle/caches/transforms-3/512b95d144c616b8d847ef4edcabc95e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+190
+191        <provider
+191-->[com.google.firebase:firebase-common:20.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+192            android:name="com.google.firebase.provider.FirebaseInitProvider"
+192-->[com.google.firebase:firebase-common:20.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+193            android:authorities="com.mertalbum.mertalbumapp.firebaseinitprovider"
+193-->[com.google.firebase:firebase-common:20.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+194            android:directBootAware="true"
+194-->[com.google.firebase:firebase-common:20.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+195            android:exported="false"
+195-->[com.google.firebase:firebase-common:20.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+196            android:initOrder="100" />
+196-->[com.google.firebase:firebase-common:20.0.0] /Users/oguzhankurum/.gradle/caches/transforms-3/bdacc25ea80059c09049f1581cb7a011/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+197
+198        <meta-data
+198-->[com.google.android.gms:play-services-basement:17.1.1] /Users/oguzhankurum/.gradle/caches/transforms-3/74afea459854fda6a944ddefecfd830b/transformed/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+199            android:name="com.google.android.gms.version"
+199-->[com.google.android.gms:play-services-basement:17.1.1] /Users/oguzhankurum/.gradle/caches/transforms-3/74afea459854fda6a944ddefecfd830b/transformed/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
+200            android:value="@integer/google_play_services_version" />
+200-->[com.google.android.gms:play-services-basement:17.1.1] /Users/oguzhankurum/.gradle/caches/transforms-3/74afea459854fda6a944ddefecfd830b/transformed/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
+201    </application>
+202
+203</manifest>

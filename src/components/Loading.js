@@ -5,19 +5,19 @@ import { ActivityIndicator } from 'react-native-paper';
 
 const { width, height } = Dimensions.get("window");
 
-export default function Loading() {
+const Loading = () => {
     return (
         <ImageBackground
             source={require('../assets/images/loading_bg.jpeg')}
-            style={{ width: width, height: height, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 30 }}>
+            style={{ width, height, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 30 }}>
             <LinearGradient
                 start={{ x: 1, y: 1 }}
                 end={{ x: 1, y: 0.2 }}
                 colors={['rgba(0,0,0,0.9)', 'transparent']}
                 style={{
                     position: 'absolute',
-                    width: width,
-                    height: height
+                    width,
+                    height
                 }}
             />
             <View style={{
@@ -30,3 +30,5 @@ export default function Loading() {
         </ImageBackground>
     );
 }
+
+export default Loading;
